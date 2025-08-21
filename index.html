@@ -42,6 +42,14 @@
         }
 
 
+        .container {
+  display: flex;              /* Make children (gridapp) line up in a row */
+  gap: 20px;                  /* Space between items */
+  justify-content: center;    /* Center horizontally */
+  flex-wrap: wrap;            /* Allow wrap on smaller screens */
+}
+
+
         .gridapp{
             backdrop-filter: blur(10px) saturate(150%);
             -webkit-backdrop-filter: blur(10px) saturate(150%);
@@ -166,13 +174,26 @@
             <p>Download the latest APK for GWC Delivery Management System apps below</p>
         </header>
 
-        <div class="gridapp">
-            <img src="logo/esaycloudwmslogo.png" alt="EasyCloud WMS Logo" class="logo">
-             <img src="logo/galfar_logo.png" alt="EasyCloud WMS Logo" class="logo">
-            <h3>EasyCloud WMS</h3>
+        <div class="container">
+
+ <div class="gridapp">
+            <img src="logo/gwc_logo.png" alt="EasyCloud WMS Logo" class="logo">
+         
+            <h3>GWC Test<br>Delivery Management System</h3>
+            <p class="downloadtxt">Download the  APK file below</p>
+            <a href="download/GWCDMSTest.apk" class="download-button">Download APK</a>
+        </div>
+
+         <div class="gridapp">
+            <img src="logo/gwc_logo.png" alt="EasyCloud WMS Logo" class="logo">
+            
+            <h3>GWC  Production <br>Delivery Management System</h3>
             <p class="downloadtxt">Download the  APK file below</p>
             <a href="download/EasyCloudWMSGalfarProd.apk" class="download-button">Download APK</a>
         </div>
+
+        </div>
+       
 
         <p class="note">
             Note: Installing the latest  APK will replace the existing version.<br>
